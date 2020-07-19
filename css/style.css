@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: Poppin-Regular-400;
+  src: url(./Poppins/Poppins-Regular.ttf); }
+body {
+  font-family: Poppin-Regular-400; }
+
+.Credit-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex; }
+  .Credit-card .Card-fill-out-image {
+    position: relative; }
+    .Credit-card .Card-fill-out-image img {
+      position: relative;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+    .Credit-card .Card-fill-out-image .form-card {
+      position: absolute;
+      top: 0; }
+      .Credit-card .Card-fill-out-image .form-card div {
+        position: relative;
+        color: #fff; }
+      .Credit-card .Card-fill-out-image .form-card #Card_Number_Fill_Out {
+        top: 4em;
+        left: 1.2em;
+        font-size: 35px; }
+      .Credit-card .Card-fill-out-image .form-card #Name_on_Card {
+        top: 6.6em;
+        left: 1.7em;
+        font-size: 25px; }
+      .Credit-card .Card-fill-out-image .form-card #Valid_Through {
+        top: 5.1em;
+        left: 13.5em;
+        font-size: 25px; }
+  .Credit-card .Form-card-fill-out {
+    width: 300px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .Credit-card .Form-card-fill-out button {
+      margin: 10px 0;
+      border: none;
+      outline: none;
+      background: no-repeat;
+      padding: 10px;
+      font-size: 17px;
+      color: #424949;
+      box-shadow: 0 0 0 3px #2e86c1;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s color; }
+      .Credit-card .Form-card-fill-out button:hover {
+        color: #fff;
+        background: #090979;
+        background: linear-gradient(90deg, rgba(9, 9, 121, 0.8771883754) 0%, #073697 11%, rgba(9, 9, 121, 0.8855917367) 100%, #00d4ff 100%); }
+    .Credit-card .Form-card-fill-out .column {
+      margin-bottom: 10px; }
+      .Credit-card .Form-card-fill-out .column > div {
+        display: flex;
+        flex-direction: column-reverse; }
+      .Credit-card .Form-card-fill-out .column label {
+        display: block;
+        font-size: 13px;
+        color: #b2babb;
+        transition: 0.2s all; }
+      .Credit-card .Form-card-fill-out .column input {
+        display: block;
+        border-color: transparent transparent #b2babb transparent;
+        outline: none;
+        background: none;
+        border-bottom: 1px solid #b2babb;
+        color: #424949;
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+        padding: 10px 0;
+        transition: 0.2s all; }
+        .Credit-card .Form-card-fill-out .column input:focus {
+          border-bottom-color: #2e86c1; }
+        .Credit-card .Form-card-fill-out .column input:focus + label {
+          color: #2e86c1; }
+    .Credit-card .Form-card-fill-out .column_3 .Valid_Through_input {
+      float: left;
+      width: 45%; }
+    .Credit-card .Form-card-fill-out .column_3 .CVV_Code_input {
+      float: right;
+      width: 45%; }
+
+@media only screen and (max-width: 850px) {
+  .Credit-card {
+    display: block; }
+    .Credit-card > div {
+      display: block; }
+    .Credit-card .Form-card-fill-out {
+      width: 100%;
+      padding: 0;
+      margin-top: 20px; } }
